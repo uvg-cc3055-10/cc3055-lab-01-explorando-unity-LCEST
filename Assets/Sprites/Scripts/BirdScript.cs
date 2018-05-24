@@ -20,7 +20,7 @@ public class BirdScript : MonoBehaviour
     {
 
         if (dead == false)
-        {
+        {//Funcion para que el personaje salte
             if (Input.GetButtonDown("Jump"))
             {
                 rb.velocity = Vector2.zero;
@@ -35,7 +35,7 @@ public class BirdScript : MonoBehaviour
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
-    {
+    {//Funcion que detecta la muerte
         dead = true;
     }
 }
